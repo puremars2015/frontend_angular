@@ -1,6 +1,7 @@
 
 
 
+  
   <!-- Hero Section -->
   <section class="bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 py-16">
     <div class="container mx-auto text-center px-6">
@@ -15,10 +16,17 @@
     <div class="container mx-auto px-6">
       <h3 class="text-3xl font-bold text-gray-800 text-center">最新文章</h3>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transform transition">
+
+
+        <div *ngFor="let article of articles" class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transform transition">
+          <img src="{{article.image}}" alt="文章圖片" class="w-full h-48 object-cover">
           <div class="p-6">
+            <h4 class="text-xl font-bold text-gray-900">{{ article.title }}</h4>
+            <p class="mt-2 text-gray-600">{{ article.description }}</p>
+            <a href="{{ article.link }}" class="mt-4 inline-block text-{{ article.link_color }}-600 hover:text-{{ article.link_color }}-800">閱讀更多 →</a>
           </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -30,4 +38,3 @@
       <p class="mt-4 text-gray-700">我是一個喜歡研究財金問題的工程師，透過文字紀錄我的研究成果點滴。希望在這裡，你也能找到屬於自己的共鳴。</p>
     </div>
   </section>
-
