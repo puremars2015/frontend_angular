@@ -11,7 +11,7 @@ export class MessageService {
   sendMessage(message: any) {
     // 呼叫api送出訊息
     console.log('Message sent:', message);
-    this.http.post('http://localhost:5000/api/new_message', message).subscribe();
+    return this.http.post('http://localhost:5000/api/new_message', message);
   }
 
 }

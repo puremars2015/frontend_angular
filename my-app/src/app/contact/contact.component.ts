@@ -19,7 +19,14 @@ export class ContactComponent {
   constructor(private service: MessageService) { }
 
   submitForm(event: any) {
-    console.log('Form submitted');
-    this.service.sendMessage(this.contactForm.value);
+    this.service.sendMessage(this.contactForm.value).subscribe({
+      next: (response:any) => {
+        alert('留言成功！我會盡快回覆您！');
+      },
+      error: (error) => {
+        console.error('留言失敗:', error);
+        alert('留言失敗！請聯絡系統管理人員！ \n mail:sam-chou@alphaleader.com');
+      }
+    });
   }
 }

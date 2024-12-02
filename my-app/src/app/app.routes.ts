@@ -12,8 +12,8 @@ export const routes: Routes = [
     { path: 'about', component: AboutComponent },
     { path: 'caluculate', component: CalculateComponent },
     { path: 'contact', component: ContactComponent },
-    { path: 'edit-article', component: EditArticleComponent },
+    { path: 'edit_article', component: EditArticleComponent },
     { path: 'index', component: IndexComponent },
-    { path: 'list-article', component: ListArticleComponent },
-    { path: 'read-article', component: ReadArticleComponent },
+    { path: 'list_article', component: ListArticleComponent },
+    { path: 'read_article', component: ReadArticleComponent },
 ];
