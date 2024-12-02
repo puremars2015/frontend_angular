@@ -1,0 +1,51 @@
+
+
+  <!-- Content Section -->
+  <section class="py-16">
+    <div class="container mx-auto px-6 bg-white shadow-lg rounded-lg">
+      <h2 class="text-3xl font-bold text-gray-800 text-center py-6">撰寫新文章</h2>
+
+      <form class="space-y-6 px-8 py-6">
+        <!-- Title Input -->
+        <div>
+          <label for="title" class="block text-lg font-medium text-gray-700">文章標題</label>
+          <input
+            type="text"
+            id="title"
+            name="title"
+            class="mt-2 w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"
+            placeholder="輸入文章標題"
+          >
+        </div>
+
+        <!-- CKEditor Content Input -->
+        <div>
+          <label for="content" class="block text-lg font-medium text-gray-700">文章內容</label>
+          <textarea
+            id="content"
+            name="content"
+            rows="10"
+            class="mt-2 w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-pink-500 focus:outline-none"
+            placeholder="在此輸入文章內容..."></textarea>
+        </div>
+
+        <!-- Buttons -->
+        <div class="flex justify-between items-center">
+          <a
+            href="/"
+            class="inline-block bg-gray-200 text-gray-700 px-6 py-2 rounded-lg shadow hover:bg-gray-300 transition"
+          >
+            返回
+          </a>
+          <button
+            type="submit"
+            onclick="submitForm(event)"
+            class="bg-purple-500 text-white px-6 py-2 rounded-lg shadow hover:bg-purple-600 transition"
+          >
+            儲存文章
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+

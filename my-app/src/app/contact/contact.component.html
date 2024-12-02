@@ -1,0 +1,31 @@
+
+    <!-- Contact Form Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-6 bg-white shadow-lg rounded-lg max-w-lg">
+            <h2 class="text-3xl font-bold text-gray-800 text-center py-6">聯絡我</h2>
+
+            <form class="space-y-6 px-6 pb-8" onsubmit="submitForm(event)">
+                <!-- Title Input -->
+                <div>
+                    <label for="title_text" class="block text-lg font-medium text-gray-700">主旨</label>
+                    <input id="title_text" type="text" required
+                        class="mt-2 w-full px-5 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none text-lg"
+                        placeholder="輸入主旨">
+                </div>
+                <!-- Content Input -->
+                <div>
+                    <label for="content_text" class="block text-lg font-medium text-gray-700">內容</label>
+                    <textarea id="content_text" required rows="10"
+                        class="mt-2 w-full px-5 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-pink-500 focus:outline-none text-lg"
+                        placeholder="輸入內容"></textarea>
+                </div>
+                <!-- Submit Button -->
+                <div class="pt-4">
+                    <button type="submit"
+                        class="w-full bg-purple-500 text-white px-6 py-3 rounded-lg shadow hover:bg-purple-600 transition text-lg">
+                        送出
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
