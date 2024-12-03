@@ -12,4 +12,9 @@ export class ArticleService {
     // 呼叫api讀取文章列表
     return this.http.get('http://localhost:5000/api/articles');
   }
+
+  createArticle(formData: any) {
+    return this.http.post('http://localhost:5000/api/create', formData);
+  }
+
 }
