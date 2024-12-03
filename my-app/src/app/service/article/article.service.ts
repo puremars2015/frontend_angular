@@ -13,6 +13,10 @@ export class ArticleService {
     return this.http.get('http://localhost:5000/api/articles');
   }
 
+  readArticle(id: string) {
+    return this.http.get(`http://localhost:5000/api/article/${id}`);
+  }
+
   createArticle(formData: any) {
     return this.http.post('http://localhost:5000/api/create', formData);
   }

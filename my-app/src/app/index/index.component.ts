@@ -12,21 +12,21 @@ export class IndexComponent implements OnInit {
 
   articles = [
       {
-          "image": "B0B0B0.png",
+          "img_url": "B0B0B0.png",
           "title": "no article",
           "content": "no article",
           "link": "#",
           "link_color": "purple"
       },
       {
-          "image": "B0B0B0.png",
+          "img_url": "B0B0B0.png",
           "title": "no article",
           "content": "no article",
           "link": "#",
           "link_color": "blue"
       },
               {
-          "image": "B0B0B0.png",
+          "img_url": "B0B0B0.png",
           "title": "no article",
           "content": "no article",
           "link": "#",

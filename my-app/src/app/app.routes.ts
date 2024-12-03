@@ -10,10 +10,10 @@ import { ReadArticleComponent } from './read-article/read-article.component';
 export const routes: Routes = [
     { path: '', redirectTo: 'index', pathMatch: 'full' },
     { path: 'about', component: AboutComponent },
-    { path: 'caluculate', component: CalculateComponent },
+    { path: 'calculate', component: CalculateComponent },
     { path: 'contact', component: ContactComponent },
     { path: 'edit_article', component: EditArticleComponent },
     { path: 'index', component: IndexComponent },
     { path: 'list_article', component: ListArticleComponent },
-    { path: 'read_article', component: ReadArticleComponent },
+    { path: 'read_article/:id', component: ReadArticleComponent },
 ];

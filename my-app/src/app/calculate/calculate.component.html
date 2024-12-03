@@ -1,46 +1,37 @@
+<!-- Contact Form Section -->
+<section class="py-16">
+    <div class="container mx-auto px-6 bg-white shadow-lg rounded-lg max-w-lg">
+        <h2 class="text-3xl font-bold text-gray-800 text-center py-6">小計算</h2>
 
-
-    <!-- Contact Form Section -->
-    <section class="py-16">
-        <div class="container mx-auto px-6 bg-white shadow-lg rounded-lg max-w-lg">
-            <h2 class="text-3xl font-bold text-gray-800 text-center py-6">小計算</h2>
-
-            <form class="space-y-6 px-6 pb-8">
-                <!-- Title Input -->
-                <div>
-                    <label for="title_text" class="block text-lg font-medium text-gray-700">第一個數字</label>
-                    <input id="n1" type="text" required
-                        class="mt-2 w-full px-5 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none text-lg"
-                        placeholder="輸入主旨">
-                </div>
-                <!-- Content Input -->
-                <div>
-                    <label for="content_text" class="block text-lg font-medium text-gray-700">第二個數字</label>
-                    <input id="n2" type="text" required
-                        class="mt-2 w-full px-5 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none text-lg"
-                        placeholder="輸入主旨">
-                </div>
-                <!-- Content Input -->
-                <div>
-                    <label for="content_text" class="block text-lg font-medium text-gray-700">結果</label>
-                    <input id="result" type="text" required
-                        class="mt-2 w-full px-5 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none text-lg"
-                        placeholder="輸入主旨">
-                </div>
-                <!-- Submit Button -->
-                <div class="pt-4">
-                    <button type="button" onclick="calculate()"
-                        class="w-full bg-purple-500 text-white px-6 py-3 rounded-lg shadow hover:bg-purple-600 transition text-lg">
-                        計算
-                    </button>
-                </div>
-            </form>
+        <div class="space-y-6 px-6 pb-8">
+            <!-- Title Input -->
+            <div>
+                <label for="title_text" class="block text-lg font-medium text-gray-700">第一個數字</label>
+                <input [(ngModel)]="n1" type="text" required
+                    class="mt-2 w-full px-5 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none text-lg"
+                    placeholder="輸入主旨">
+            </div>
+            <!-- Content Input -->
+            <div>
+                <label for="content_text" class="block text-lg font-medium text-gray-700">第二個數字</label>
+                <input [(ngModel)]="n2" type="text" required
+                    class="mt-2 w-full px-5 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none text-lg"
+                    placeholder="輸入主旨">
+            </div>
+            <!-- Content Input -->
+            <div>
+                <label for="content_text" class="block text-lg font-medium text-gray-700">結果</label>
+                <input [(ngModel)]="result" type="text" required
+                    class="mt-2 w-full px-5 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none text-lg"
+                    placeholder="輸入主旨">
+            </div>
+            <!-- Submit Button -->
+            <div class="pt-4">
+                <button type="button" (click)="calculate()"
+                    class="w-full bg-purple-500 text-white px-6 py-3 rounded-lg shadow hover:bg-purple-600 transition text-lg">
+                    計算
+                </button>
+            </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white py-6">
-        <div class="container mx-auto text-center px-6">
-            <p>© 2024 軟體工程師的尋寶之路 Blog. All Rights Reserved.</p>
-        </div>
-    </footer>
+    </div>
+</section>
